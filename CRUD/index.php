@@ -13,6 +13,8 @@ and open the template in the editor.
         <?php
                 echo '<h1>HOLA MUNDO</h1>';
                 echo '<h3>Desde PHP<h3>';
+                echo '<h4>Desde PHP<h4>';
+                echo '<h5>Desde PHP<h5>';
         ?>
     </body>
 </html>
