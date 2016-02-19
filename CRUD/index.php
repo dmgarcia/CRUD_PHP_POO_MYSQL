@@ -12,6 +12,7 @@ and open the template in the editor.
     <body>
         <?php
                 echo '<h1>HOLA MUNDO</h1>';
+                echo '<h3>Desde PHP<h3>';
         ?>
     </body>
 </html>
