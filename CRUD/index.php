@@ -15,6 +15,7 @@ and open the template in the editor.
                 echo '<h3>Desde PHP<h3>';
                 echo '<h4>Desde PHP<h4>';
                 echo '<h5>Desde PHP<h5>';
+                echo '<h6>Desde PHP<h6>';
         ?>
     </body>
 </html>
