@@ -25,6 +25,7 @@
             $this->estudiante->set("nombre", $nombre);
             $this->estudiante->set("apellido", $apellido);
             $this->estudiante->set("telefono", $telefono);
+            $this->estudiante->set("edad", $edad);
             $this->estudiante->set("promedio", $promedio);
             
             $resultado = $this->estudiante->crear();            
