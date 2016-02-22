@@ -1,7 +1,8 @@
 <?php
 
     //CLASE DE CONEXION INCLUIDA
-    include_once './Conexion.php';
+    //include_once './Conexion.php';
+    include_once ('Conexion.php');
     
     class Estudiante{
         
