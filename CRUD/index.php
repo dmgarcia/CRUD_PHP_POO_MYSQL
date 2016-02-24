@@ -20,14 +20,21 @@ and open the template in the editor.
         <h1>
             Bienvenido a todos los estudiantes
         </h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="?cargar=crear">Registrar</a></li>
+            </ul>
+        </nav>
 
         <section>
-<?php
-$enrutador = new Enrutador();
-if ($enrutador->validarGET($_GET['cargar'])) {
-    $enrutador->cargarVista($_GET['cargar']);
-}
-?>
+            <?php
+            $enrutador = new Enrutador();
+            if ($enrutador->validarGET($_GET['cargar'])) {
+                $enrutador->cargarVista($_GET['cargar']);
+            }
+            ?>
         </section>
 
     </body>
