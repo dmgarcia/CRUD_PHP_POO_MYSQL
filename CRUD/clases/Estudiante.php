@@ -42,7 +42,7 @@ class Estudiante {
         $num = mysql_num_rows($resultado);
 
         if ($num != 0) {
-            return false;
+            return FALSE;
         } else {
             $sql = "INSERT INTO estudiantes (cedula, nombre, apellido, telefono, edad,"
                     . " promedio, fecha) VALUES('{$this->cedula}', '{$this->nombre}',"
@@ -50,7 +50,7 @@ class Estudiante {
                     . " '{$this->promedio}', NOW())";
 
             $this->con->consultaSimple($sql);
-            return true;
+            return TRUE;
         }
     }
 
