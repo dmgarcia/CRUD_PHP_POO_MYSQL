@@ -1,6 +1,6 @@
 <?php
 
-    include_once("../clases/Estudiante.php");
+    include_once("clases/Estudiante.php");
 
     class controladorEstudiantes{
         //Atributos
