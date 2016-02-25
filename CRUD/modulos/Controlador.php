@@ -39,12 +39,13 @@
         
         public function ver($id){
             $this->estudiante->set("id", $id);
-            $this->estudiante->ver();
+            $datos = $this->estudiante->ver();
+            return $datos;
         }
         
         public function editar($id){
             $this->estudiante->set("id", $id);
-            $this->estudiante-ver();
+            $this->estudiante->ver();
             $this->estudiante->editar();
         }
         

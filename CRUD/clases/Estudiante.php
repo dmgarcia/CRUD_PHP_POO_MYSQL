@@ -61,7 +61,7 @@ class Estudiante {
     }
 
     public function ver() {
-        $sql = "SELECT * FROM estudiantes WHERE id =  '($this->id)'  LIMIT 1";
+        $sql = "SELECT * FROM estudiantes WHERE id =  '$this->id'  LIMIT 1";
         $resultado = $this->con->consultaRetorno($sql);
         $row = mysql_fetch_assoc($resultado);
 
@@ -73,6 +73,8 @@ class Estudiante {
         $this->edad = $row['edad'];
         $this->promedio = $row['promedio'];
         $this->fecha = $row['fecha'];
+        
+        return $row;
     }
 
     public function editar() {
