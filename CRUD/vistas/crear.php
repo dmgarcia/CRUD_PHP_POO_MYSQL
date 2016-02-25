@@ -13,10 +13,8 @@ if(isset($_POST['enviar'])){
                             );
     if($r){
         echo 'Se ha registrado un nuevo estudiante';
-        echo '   --->'.$r;
     }else{
         echo 'La cedula que esta intentando registrar ya existe';
-        echo '   --->'.$r;
     }
 }
 ?>
