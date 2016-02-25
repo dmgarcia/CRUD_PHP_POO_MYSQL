@@ -37,8 +37,9 @@ class Estudiante {
     }
 
     public function crear() {
-        $sql2 = "SELECT * FROM estudiantes WHERE cedula = '($this->cedula)'";
+        $sql2 = "SELECT * FROM estudiantes WHERE cedula = '$this->cedula'";
         $resultado = $this->con->consultaRetorno($sql2);
+        
         $num = mysql_num_rows($resultado);
 
         if ($num != 0) {
