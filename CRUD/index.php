@@ -13,7 +13,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Login</title>
+        <title>CRUD Estudiantes</title>
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
