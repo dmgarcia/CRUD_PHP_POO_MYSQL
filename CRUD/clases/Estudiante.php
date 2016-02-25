@@ -78,8 +78,9 @@ class Estudiante {
     }
 
     public function editar() {
-        $sql = "UPDATE estudiantes SET nombre = '{$this->nombre}', apellido = {$this->apellido},"
-                . "telefono = '{$this->telefono}', edad = '{$this->edad}', promedio = '{$this->promedio}' WHERE id = '{$this->id}'";
+        $sql = "UPDATE estudiantes SET nombre = '$this->nombre', apellido = '$this->apellido',"
+                . "telefono = '$this->telefono', edad = '$this->edad' WHERE id = '$this->id'";
+        echo $sql;
         $this->con->consultaSimple($sql);
     }
 

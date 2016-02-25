@@ -18,5 +18,11 @@ if (isset($_GET['id'])) {
 <b>Apellido:</b> <?php echo $row['apellido']; ?>
 <br><br>
 
+<b>Edad:</b> <?php echo $row['edad']; ?>
+<br><br>
+
+<b>Teléfono:</b> <?php echo $row['telefono']; ?>
+<br><br>
+
 <b>Promedio:</b> <?php echo $row['promedio']; ?>
 <br><br>

@@ -43,9 +43,12 @@
             return $datos;
         }
         
-        public function editar($id){
+        public function editar($id, $nombre, $apellido, $edad, $telefono){
             $this->estudiante->set("id", $id);
-            $this->estudiante->ver();
+            $this->estudiante->set("nombre", $nombre);
+            $this->estudiante->set("apellido", $apellido);
+            $this->estudiante->set("edad", $edad);
+            $this->estudiante->set("telefono", $telefono);
             $this->estudiante->editar();
         }
         
