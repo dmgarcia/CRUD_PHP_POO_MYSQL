@@ -16,6 +16,10 @@
                 case "editar":
                     include_once ('vistas/'.$vista.'.php');
                     break;
+                
+                case "eliminar":
+                    include_once ('vistas/'.$vista.'.php');
+                    break;
 
                 default:
                     include_once ('vistas/error.php');

@@ -56,7 +56,7 @@ class Estudiante {
     }
 
     public function eliminar() {
-        $sql = "DELETE FROM estudiantes WHERE id = '($this->id)' ";
+        $sql = "DELETE FROM estudiantes WHERE id = '$this->id' ";
         $this->con->consultaSimple($sql);
     }
 
