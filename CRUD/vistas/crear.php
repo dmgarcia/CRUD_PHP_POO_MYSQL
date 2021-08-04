@@ -12,7 +12,7 @@ if(isset($_POST['enviar'])){
                                 $_POST['nota3']
                             );
     if($r){
-        echo 'Se ha registrado un nuevo estudiante';
+        echo 'Se ha registrado un NUEVO estudiante';
     }else{
         echo 'La cedula que esta intentando registrar ya existe';
     }
